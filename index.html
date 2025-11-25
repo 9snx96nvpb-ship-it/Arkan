@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Panan Airlines — Avgangsstatus PA 452 (ZKA → OSL)</title>
+<style>
+:root{
+  --bg:#071322;
+  --card:#0f1724;
+  --muted:#9fb0b8;
+  --accent:#1fa67a;
+  --accent-2:#f7b733;
+  --glass: rgba(255,255,255,0.03);
+  --radius:12px;
+  --maxw:980px;
+  --sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--sans);
+  background:
+    radial-gradient(800px 300px at 10% 6%, rgba(31,166,122,0.03), transparent 10%),
+    linear-gradient(180deg,#04101a 0%, #06121a 100%);
+  color:#e6eef1;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:28px;
+}
+
+.wrap{
+  width:100%;
+  max-width:var(--maxw);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--radius);
+  padding:18px;
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.6);
+}
+
+header{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.logo{
+  width:72px;height:72px;border-radius:10px;background:
+  linear-gradient(180deg,#072017,#0b2b1e);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+.title h1{
+  margin:0;font-size:18px;
+  letter-spacing:0.2px;
+}
+.title p{margin:0;color:var(--muted);font-size:13px;margin-top:4px}
+
+.status-badge{
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#042018;padding:8px 12px;border-radius:999px;font-weight:800;
+  box-shadow: 0 6px 12px rgba(31,166,122,0.08);
+}
+
+main{margin-top:8px;}
+.panel{display:grid;grid-template-columns: 1fr 320px;gap:18px;align-items:start;}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  border-radius:10px;padding:16px;border:1px solid rgba(255,255,255,0.03);}
+.flight{display:flex;gap:16px;align-items:center;}
+.flight .ident{
+  min-width:110px;background:linear-gradient(90deg,#08172a,#0f243b);
+  padding:14px;border-radius:10px;text-align:center;
+}
+.flight .ident h2{margin:0;font-size:20px;color:var(--accent)}
+.flight .ident p{margin:6px 0 0 0;color:var(--muted);font-size:12px}
+.flight .meta h3{margin:0;font-size:18px}
+.flight .meta p{margin:6px 0;color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin-top:10px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  border-radius:8px;overflow:hidden;}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px dashed rgba(255,255,255,0.03);
+  font-size:15px;}
+th{background:rgba(255,255,255,0.02);color:var(--muted);font-weight:700}
+td.status{font-weight:700;color:#ffd166}
+.note{color:var(--muted);font-size:13px;margin-top:10px}
+.small{font-size:13px;color:var(--muted)}
+.side{display:flex;flex-direction:column;gap:12px;}
+.weather{display:flex;align-items:center;gap:12px;}
+.weather .icon{
+  width:64px;height:64px;border-radius:8px;background:linear-gradient(180deg,#17344a,#0f2437);
+  display:flex;align-items:center;justify-content:center;font-size:22px;}
+.reveal{background:linear-gradient(90deg,#072017,#122a24);
+  padding:12px;border-radius:8px;color:var(--muted);}
+.countdown{font-weight:800;color:#fff;font-size:18px;margin-top:6px}
+footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:880px){.panel{grid-template-columns:1fr}.brand .title{display:none}}
+img{width:100%;border-radius:8px;margin-top:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">
+<svg viewBox="0 0 64 64" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#1fa67a"/><stop offset="1" stop-color="#f7b733"/></linearGradient></defs>
+<rect width="64" height="64" rx="10" fill="#072017"/>
+<path d="M10 44 C22 28, 42 28, 54 12 L48 12 C36 26, 16 26, 6 42 Z" fill="url(#g1)"/>
+<circle cx="40" cy="40" r="10" fill="#f7b733" opacity="0.9"/>
+</svg>
+</div>
+<div class="title">
+<h1>Panan Airlines</h1>
+<p>Avgangsstatus — Zakra (ZKA) → Oslo Gardermoen (OSL)</p>
+</div>
+</div>
+<div class="status-badge">Oppdatering: 01.12.2025</div>
+</header>
+
+<main>
+<div class="panel">
+<div class="card">
+<div class="flight">
+<div class="ident">
+<h2>PA 452</h2>
+<p>Zakra (ZKA) → Oslo Gardermoen (OSL)</p>
+</div>
+<div class="meta">
+<h3>Avgang: 17:10 (01.12.2025)</h3>
+<p class="small">Passasjer: Arkan Osman Mohammad Reza</p>
+<p class="small">Referanse: 9PAXOSL998ARPS | Innsjekket: 25 kg | Håndbagasje: 10 kg | Sete: kommer 30.11.2025 kl 17:10</p>
+</div>
+</div>
+
+<table>
+<thead>
+<tr><th>Tid</th><th>Flyselskap</th><th>Flight</th><th>Til</th><th>Terminal</th><th>Gate</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>17:10</td>
+<td>Panan Airlines</td>
+<td><strong>PA 452</strong></td>
+<td><strong>Oslo Gardermoen (OSL)</strong></td>
+<td>Utland</td>
+<td id="gateCell">—</td>
+<td class="status" id="statusCell">Ingenting enda!</td>
+</tr>
+</tbody>
+</table>
+
+<p class="note">Gateinformasjon blir tilgjengelig ca. 1 time før avgang. Følg med her for oppdateringer.</p>
+
+<img id="airportImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtyobXgsIBXimR8Nqfaf-kTgZ1cQzqu-qBjPhWqMYSZfHDlN59kar53Ds&s=10" alt="Oslo Gardermoen" style="display:block;"/>
+
+</div>
+
+<aside class="side">
+<div class="card weather">
+<div class="icon">☀️</div>
+<div>
+<div style="font-weight:800">Oslo Gardermoen (OSL)</div>
+<div class="small">3 °C • Lett bris</div>
+</div>
+</div>
+
+<div class="card reveal">
+<div><strong>Gateinformasjon</strong></div>
+<div id="gateReveal">
+<div class="small">Gate publiseres kl. 15:10</div>
+<div class="countdown" id="countdown">Tid til gatevisning: —</div>
+</div>
+</div>
+</aside>
+</div>
+
+<footer>
+© 2025 Panan Airlines — Oslo Gardermoen · All rights reserved
+</footer>
+</main>
+</div>
+
+<script>
+(function(){
+const gateCell = document.getElementById('gateCell');
+const statusCell = document.getElementById('statusCell');
+const countdownEl = document.getElementById('countdown');
+
+function pad(n){ return n<10?'0'+n:n; }
+
+const schedule = {
+  gatePublish: new Date("2025-12-01T15:10:00"),
+  goToGate: new Date("2025-12-01T16:10:00"),
+  boarding: new Date("2025-12-01T17:40:00"),
+  depart: new Date("2025-12-01T17:07:00"),
+  arrive: new Date("2025-12-01T19:54:00")
+};
+
+function getTimeDiff(target){
+  const now = new Date();
+  let diff = Math.floor((target - now)/1000);
+  if(diff < 0) diff = 0;
+  const days = Math.floor(diff / 86400);
+  const hours = Math.floor((diff % 86400) / 3600);
+  const minutes = Math.floor((diff % 3600) / 60);
+  const seconds = diff % 60;
+  return {days,hours,minutes,seconds};
+}
+
+function formatCountdown(diff){
+  return `${pad(diff.days)}d ${pad(diff.hours)}h ${pad(diff.minutes)}m ${pad(diff.seconds)}s`;
+}
+
+function update(){
+  const now = new Date();
+
+  if(now < schedule.gatePublish){
+    statusCell.textContent = "Gateinformasjon publiseres snart";
+    const diff = getTimeDiff(schedule.gatePublish);
+    countdownEl.textContent = "Tid til gatepublisering: " + formatCountdown(diff);
+    gateCell.textContent = "—";
+    return;
+  }
+
+  if(now < schedule.goToGate){
+    statusCell.textContent = "Gate publisert — via passkontroll";
+    gateCell.textContent = "B9";
+    const diff = getTimeDiff(schedule.goToGate);
+    countdownEl.textContent = "Tid til “Go to gate”: " + formatCountdown(diff);
+    return;
+  }
+
+  if(now < schedule.boarding){
+    statusCell.textContent = "Go to gate";
+    gateCell.textContent = "B9";
+    const diff = getTimeDiff(schedule.boarding);
+    countdownEl.textContent = "Tid til boarding: " + formatCountdown(diff);
+    return;
+  }
+
+  if(now < schedule.depart){
+    statusCell.textContent = "Boarding pågår";
+    gateCell.textContent = "B9";
+    const diff = getTimeDiff(schedule.depart);
+    countdownEl.textContent = "Tid til avgang: " + formatCountdown(diff);
+    return;
+  }
+
+  if(now < schedule.arrive){
+    statusCell.textContent = "I luften ✈️ — forventet landing 19:54";
+    gateCell.textContent = "B9";
+    countdownEl.textContent = "";
+    return;
+  }
+
+  statusCell.textContent = "Landet på Oslo Gardermoen (OSL)";
+  gateCell.textContent = "—";
+  countdownEl.textContent = "";
+}
+
+update();
+setInterval(update,1000);
+})();
+</script>
+</body>
+</html>
